@@ -1,0 +1,52 @@
+.main {
+  position: fixed;
+  overflow: hidden;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 1;
+
+}
+
+.drawer {
+  width: 200px;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  max-width: 1024px;
+  background-color: #0070f3;
+
+}
+
+.active {
+  transform: translateX(0);
+}
+
+.inactive {
+  transform: translateX(-100%);
+  transition-duration: 0.3s;
+  opacity: 0;
+}
+
+.inactiveMain {
+  transform: translateX(-100%);
+  transition-property: all;
+  transition-duration: 0.2s;
+  opacity: 0;
+}
+
+.outside {
+  cursor: pointer;
+  width: 100vw;
+  height: 100%;
+}

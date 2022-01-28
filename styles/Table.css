@@ -1,0 +1,12 @@
+.notcompleted {
+  background: #f0f0f0;
+}
+
+.completed {
+  background: lightgreen;
+}
+
+.completed .ant-table-cell-row-hover {
+  background: rgb(167, 245, 167) !important;
+  transition: background 0.25s ease-in-out;
+}
